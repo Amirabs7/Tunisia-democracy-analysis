@@ -1,0 +1,143 @@
+title: "Tunisia’s Fragile Democratic Rollercoaster: Insights from V-Dem ERT Data"
+author: "Amira Ben Salem"
+date: "`20.07.2025`"
+output: html_document
+---
+
+## About the Dataset
+
+The data used in this report comes from the **Episodes of Regime Transformation (ERT)** dataset, developed by the [Varieties of Democracy (V-Dem) Institute](https://www.v-dem.net/) at the University of Gothenburg, Sweden.
+
+The **ERT dataset** identifies and categorizes **episodes of regime change** — specifically, episodes of **democratization** (e.g. liberalizing autocracy, democratic deepening) and **autocratization** (e.g. democratic regression, autocratic hardening). It is built upon the annual **V-Dem dataset**, one of the most comprehensive sources of expert-coded indicators of democracy, spanning over 200 countries from **1900 to the present**.
+
+Each episode in the ERT dataset is defined through statistically significant and sustained shifts in key indicators such as electoral integrity, civil liberties, and political pluralism. The dataset thus allows for a nuanced understanding of political change — not just whether democracy or autocracy exists, but **how it evolves over time**, in what form, and with what outcome.
+
+This report uses **version 15** of the ERT dataset (aligned with **V-Dem v15**, released in 2024) and focuses on Tunisia as a case study.
+
+---
+
+## Introduction
+
+This brief report explores Tunisia’s political development over time using data from the **V-Dem Episodes of Regime Transformation (ERT)** dataset. The focus is on the **Polyarchy Index**, which estimates the quality of democracy based on factors like elections, civil liberties, and political participation.
+
+Tunisia is particularly significant in the context of the **Arab Spring** (2010–2011), which triggered widespread calls for democratization across the Middle East and North Africa. Unlike most other countries affected, Tunisia underwent a promising democratic transition. This analysis visualizes how democratic quality evolved before and after that period.
+
+---
+
+## Plot: Democracy Score Over Time (Tunisia)
+
+*Interpretation of Tunisia’s Polyarchy Score over time shows a long period of authoritarian rule, with scores near zero throughout most of the 20th century. A sharp democratic surge starts in 2011 following the Jasmine Revolution.*
+
+From 2012 to 2014, Tunisia’s democratic quality peaked, reflecting constitutional reforms, competitive elections, and expanded civil liberties. However, the index declines gradually after 2014, steepening post-2019 due to political polarization, executive overreach, and the 2021 suspension of parliament by President Kais Saied.
+
+This pattern highlights the fragility of Tunisia’s democratic transition and the continuing need to protect democratic institutions beyond initial revolutionary gains.
+
+---
+
+## Tunisia’s Democratic Journey: Rise, Peak, and Recent Challenges
+
+Tunisia’s democratic trajectory features:
+
+- A long authoritarian baseline before 2011.
+- A sharp democratic jump during the Arab Spring.
+- A fragile peak during 2012–2014.
+- Subsequent democratic backsliding after 2014, worsening post-2019.
+
+This rollercoaster underscores the volatility of democratization processes in transitional regimes and the critical role of stable institutions for democratic consolidation.
+
+---
+
+## Understanding Democratization Episodes (ERT Framework)
+
+The V-Dem ERT dataset categorizes democratization episodes as periods of **sustained and significant positive change** in democracy indicators. Episodes end when progress stabilizes, stagnates, or reverses.
+
+Outcomes (`dem_ep_outcome_agg`) are classified as:
+
+- **1 = Failed:** Democracy collapsed; autocracy deepened.
+- **2 = Stagnated:** No clear progress or regression.
+- **3 = Partial success:** Some democratic gains but not consolidated.
+- **4 = Full success:** Stable democratic regime established.
+
+---
+
+## Global Patterns in Democratization Outcomes
+
+- Most democratization episodes worldwide result in failure or partial success.
+- Fully consolidated democracies (outcome 4) are rare.
+- Stagnation is common, especially in hybrid or transitional regimes.
+
+---
+
+## Temporal Trends in Democratization Episodes
+
+- **1980s–1990s:** A wave of democratization following the Cold War, with mixed outcomes.
+- **Post-2010:** The number of democratization attempts declined, but the share of successful episodes increased since 2020, possibly due to stronger foundations or better planning in recent transitions.
+
+---
+
+## Recent Democratization Episodes: Case Summaries
+
+- **Benin (2010):** Stable progress with peaceful elections.
+- **Bolivia (2019):** Successful transition amid polarization.
+- **Fiji (2010):** Civilian rule return with democratic gains.
+- **Honduras (2010):** Electoral reforms undermined by corruption.
+- **Thailand (2010):** Partial democratization amid military influence.
+- **Tunisia (2011):** Initial success followed by backsliding.
+- **Zambia (2010):** Peaceful power transitions with press freedom concerns.
+
+---
+
+## Institutional Strength and Democratic Success
+
+Successful democratization tends to start where some democratic institutions exist (polyarchy scores ~0.2 to 0.4):
+
+- Countries with existing democratic features have better odds of success.
+- Very low institutional quality rarely leads to success, but exceptions exist.
+- Very high initial democracy scores don’t guarantee transitions.
+- Institutional strength is necessary but not sufficient for democracy to flourish.
+
+---
+
+## Predictive Modeling: Logistic Regression on Democratization Success
+
+I ran a logistic regression predicting democratization episode success (`success_binary`) based on the Polyarchy score at episode start (`v2x_polyarchy`) for episodes after 1990.
+
+### Results:
+
+- **Intercept:** Baseline odds of success near zero polyarchy are very low (<1%).
+- **Polyarchy coefficient:** Negative and significant.
+
+### Interpretation:
+
+Contrary to intuition, higher polyarchy scores at the start of democratization episodes correlate with *lower* odds of success.
+
+**Why?**
+
+- Transitions starting from near-complete autocracy (very low polyarchy) sometimes achieve clearer breakthroughs.
+- Hybrid or semi-democratic regimes face entrenched elites and institutional weaknesses that can block consolidation.
+- Thus, democratization success is often harder in regimes that are “partly free” but unstable.
+
+### Tunisia in context:
+
+- The 2011 democratic surge was a dramatic shift from near authoritarianism.
+- The fragility and decline since reflects challenges common in hybrid regimes.
+- Tunisia exemplifies the complex, non-linear nature of democratization transitions.
+
+---
+
+## Visualization: Predicted Probability of Success vs. Polyarchy
+
+- **X-axis:** Polyarchy score at episode start.
+- **Y-axis:** Predicted probability of democratization success.
+- **Trend:** Declining probability with increasing polyarchy score.
+
+This highlights the paradox that stronger partial democracies might struggle more to complete democratization.
+
+---
+
+# Final Remarks
+
+Tunisia’s democratic journey reflects the broader global complexity of political transitions. Initial breakthroughs are just the first step; consolidation requires robust institutions and political stability. The V-Dem ERT data offers a powerful lens to analyze these dynamics quantitatively and comparatively.
+
+---
+
