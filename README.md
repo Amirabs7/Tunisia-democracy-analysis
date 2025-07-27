@@ -5,24 +5,10 @@ Repository Structure
 plots/
 Contains all visualizations generated during the analysis in image formats (e.g., PNG, PDF). Examples include:
 
-Democracy score over time Tunisia.png
 
-Outcomes of democratization episodes global.png
-
-Starting Democracy Levels of Successful Transitions Since 2000.png
-
-post democratization episode status by country.png
-
-success of democratization episodes over time.png
 
 scripts/
 Contains R scripts used for data cleaning, analysis, and plotting:
-
-Democracy Score Over Time (Tunisia).R
-
-Democratization process.R
-
-The Episodes of Regime Transformation (ERT) dataset.R
 
 reports/
 Contains the main report documenting the analysis, results, and conclusions:
@@ -36,8 +22,6 @@ Contains the original and processed datasets used in the project:
 
 data.csv (subset or processed data from the ERT dataset)
 
-README.md
-This file, providing an overview of the project and its contents.
 
 .Rhistory
 R session history file (can be ignored or removed if not needed).
@@ -59,19 +43,6 @@ R (version 4.0 or above recommended)
 R packages: ggplot2, dplyr, ERT, tibble, and others as used in scripts.
 
 See individual scripts for package details.
-
-How to Run
-Clone this repository locally.
-
-Open RStudio or your preferred R environment.
-
-Ensure the V-Dem ERT dataset or processed data.csv is available in the data/ folder or loaded via the ERT R package.
-
-Run the analysis scripts in the scripts/ folder sequentially or as needed.
-
-Generate plots in the plots/ folder and the report from the R Markdown file in reports/.
-
-View Tunisia’s Fragile Democratic Rollercoaster Insights from V-Dem ERT Data.Rmd for detailed documentation.
 
 Key Findings
 Tunisia experienced decades of near-zero democracy scores before 2011.
