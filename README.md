@@ -12,7 +12,7 @@ This repository presents an in-depth, data-driven analysis of **Tunisia’s demo
 ## 🗂️ Repository Structure
 
 📊 plots/
-Visualizations created in R (PDF, PNG), showing democracy scores, regime timelines, etc.
+- Visualizations created in R (PDF, PNG), showing democracy scores, regime timelines, etc.
 
 📜 scripts/
 R scripts used for:
@@ -21,14 +21,13 @@ R scripts used for:
 - Creating visualizations
 
 📝 reports/
-RMarkdown file containing the full narrative and interpretation:
-➤ Tunisia’s Fragile Democratic Rollercoaster Insights from V-Dem ERT Data.Rmd
+- RMarkdown file containing the full narrative and interpretation: ➤ Tunisia’s Fragile Democratic Rollercoaster Insights from V-Dem ERT Data.Rmd
 
 📁 data/
 - data.csv (processed subset from V-Dem ERT dataset)
 
 🔁 .Rhistory
-RStudio session history (optional, can be ignored)
+- RStudio session history (optional, can be ignored)
 
 
 ---
@@ -58,12 +57,20 @@ RStudio session history (optional, can be ignored)
 
 ## 📈 Key Insights
 
-🔴 Before 2011: Tunisia ranked extremely low on democracy scales, with nearly zero political competition or participation under Ben Ali.
-
+- Before 2011: Tunisia ranked extremely low on democracy scales, with nearly zero political competition or participation under Ben Ali.
 - 2010–2011: The Arab Spring sparked a democratic breakthrough, captured in the ERT dataset as a major regime change.
 - 2012–2014: Democratic indicators peaked as Tunisia drafted a new constitution, held free elections, and gained international recognition.
 - Post-2019 Decline: Political instability, presidential overreach, and weakened institutions triggered a democratic regression — visible in falling polyarchy and liberal democracy scores.
 - The Trajectory Remains Fragile: Despite democratic gains, Tunisia's experience shows how easily reforms can reverse without strong safeguards.
 
   ---
+
+  ## 👩‍💻 Author
+  
+Amira Ben Salem  : 📧 besamira77@gmail.com
+
+  ---
+
+
+
   
