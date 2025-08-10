@@ -1,7 +1,7 @@
 # 🇹🇳 Tunisia's Democratic Trajectory Analysis  
 *Exploring Rise, Reversal, and Fragility using V-Dem ERT Data*
 
-This repository presents an in-depth, data-driven analysis of **Tunisia’s democratic journey** since the Arab Spring. Built entirely in **R**, the project leverages the **Varieties of Democracy (V-Dem) Episodes of Regime Transformation (ERT)** dataset to uncover trends, turning points, and long-term risks in Tunisia's fragile transition to democracy.
+Tunisia had in the past 15 years a unique political trajectory in the MENA region startint with the Arab Spring back in 2011 . This repository presents an in-depth, data-driven analysis of **Tunisia’s democratic journey** since the Arab Spring. Built entirely in **R**, the project leverages the **Varieties of Democracy (V-Dem) Episodes of Regime Transformation (ERT)** dataset to uncover trends, turning points, and long-term risks in Tunisia's fragile transition to democracy.
 
 > 📍 **Data Source**:  
 > [V-Dem ERT Dataset](https://www.v-dem.net/data/ert-dataset/) – Episodes of Regime Transformation (v2)
@@ -62,6 +62,7 @@ R scripts used for:
 - 2012–2014: Democratic indicators peaked as Tunisia drafted a new constitution, held free elections, and gained international recognition.
 - Post-2019 Decline: Political instability, presidential overreach, and weakened institutions triggered a democratic regression — visible in falling polyarchy and liberal democracy scores.
 - The Trajectory Remains Fragile: Despite democratic gains, Tunisia's experience shows how easily reforms can reverse without strong safeguards.
+- This project is an illustration of Tunisia different political trajectories since 2011. 
 
   ---
 
