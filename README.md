@@ -1,10 +1,12 @@
-# 🇹🇳 Tunisia's Democratic Trajectory Analysis  
-*Exploring Rise, Reversal, and Fragility using V-Dem ERT Data*
+**Exploring Rise, Reversal, and Fragility using V-Dem ERT Data**  
 
-Tunisia had in the past 15 years a unique political trajectory in the MENA region startint with the Arab Spring back in 2011 . This repository presents an in-depth, data-driven analysis of **Tunisia’s democratic journey** since the Arab Spring. Built entirely in **R**, the project leverages the **Varieties of Democracy (V-Dem) Episodes of Regime Transformation (ERT)** dataset to uncover trends, turning points, and long-term risks in Tunisia's fragile transition to democracy.
+---
 
-> 📍 **Data Source**:  
-> [V-Dem ERT Dataset](https://www.v-dem.net/data/ert-dataset/) – Episodes of Regime Transformation (v2)
+## 📌 Overview  
+Tunisia has had a unique political trajectory in the MENA region since the Arab Spring in 2011. This repository presents an in-depth, data-driven analysis of Tunisia’s democratic journey, leveraging the **Varieties of Democracy (V-Dem) Episodes of Regime Transformation (ERT) dataset** to uncover trends, turning points, and long-term risks in its fragile transition.
+
+📍 **Data Source**:  
+[V-Dem ERT Dataset v2](https://www.v-dem.net/) – Episodes of Regime Transformation  
 
 ---
 
@@ -30,20 +32,9 @@ R scripts used for:
 - RStudio session history (optional, can be ignored)
 
 
----
 
-## ⚙️ How to Use
 
-1. **Clone** the repository:
-   ```bash
-   git clone https://github.com/Amirabs7/Tunisia-democracy-analysis.git
-   
-- Open the .Rproj file or any .R script inside scripts/.
-- Run the R scripts to reproduce visualizations and outputs.
-- Explore the rendered plots in the plots/ folder.
-- Read the RMarkdown report in reports/ for a full narrative, methods, and key insights.
-
----
+--
 
 
 ## 📦 Dependencies
@@ -52,20 +43,82 @@ R scripts used for:
 -install.packages(c("ggplot2", "dplyr", "readr", "tibble", "scales", "lubridate", "stringr"))
 -The ERT dataset was processed using tidyverse methods and custom filtering functions.
 
----
 
+--
+
+## 📊 Key Visualizations  
+*(Click any image to view full resolution)*  
+
+### 1. Tunisia’s Democracy Score Over Time  
+[![Polyarchy Index](Democracy%20score%20over%20time%20Tunisia.png)](Democracy%20score%20over%20time%20Tunisia.png)  
+*Post-2011 surge, 2014 peak, and gradual decline after 2019.*  
+
+### 2. Global Democratization Outcomes  
+[![Success Rates](Outcomes%20of%20democratization%20episodes%20gloabl.png)](Outcomes%20of%20democratization%20episodes%20gloabl.png)  
+*Only 17% of episodes achieve full democratic success (V-Dem ERT).*  
+
+### 3. Starting Democracy Levels vs. Success  
+[![Initial Conditions Matter](Starting%20Democracy%20Levels%20of%20Successful%20Transitions%20Since%202000.png)](Starting%20Democracy%20Levels%20of%20Successful%20Transitions%20Since%202000.png)  
+*Transitions from partial autocracy (Polyarchy ~0.3) succeed most often.*  
+
+---
 
 ## 📈 Key Insights
 
-- Before 2011: Tunisia ranked extremely low on democracy scales, with nearly zero political competition or participation under Ben Ali.
-- 2010–2011: The Arab Spring sparked a democratic breakthrough, captured in the ERT dataset as a major regime change.
-- 2012–2014: Democratic indicators peaked as Tunisia drafted a new constitution, held free elections, and gained international recognition.
-- Post-2019 Decline: Political instability, presidential overreach, and weakened institutions triggered a democratic regression — visible in falling polyarchy and liberal democracy scores.
-- The Trajectory Remains Fragile: Despite democratic gains, Tunisia's experience shows how easily reforms can reverse without strong safeguards.
-- This project is an illustration of Tunisia different political trajectories since 2011. 
+### 🔴 Authoritarian Baseline (Pre-2011)
+- **Polyarchy Score:** 0.08 (2000s)
+- **Characteristics:**
+  - ✖ No free elections
+  - ✖ Suppressed civil liberties
+  - ✖ Absence of political pluralism
 
-  ---
+### 🟢 Arab Spring Breakthrough (2010-2011)
+- **Polyarchy Surge:** 0.08 → 0.45 (+463% in 1 year)
+- **Catalysts:**
+  - ✨ Mass protests (Jasmine Revolution)
+  - ✨ Ben Ali's ouster (Jan 2011)
+  - ✨ Interim democratic government
 
+### 🏆 Democratic Peak (2012-2014)
+- **Peak Score:** 0.55 (2014)
+- **Achievements:**
+  - ✓ Competitive elections
+  - ✓ Press freedom gains
+  - ✓ Judicial independence
+  - ✓ New constitution (2014)
+
+### ⚠️ Backsliding (Post-2019)
+- **Decline to:** 0.35 (-36% from peak)
+- **Causes:**
+  - 🔻 Presidential power grabs (2021 parliament suspension)
+  - 🔻 Eroded checks and balances
+  - 🔻 Crackdowns on opposition
+
+### 🌍 Global Lessons
+- **Fragility Factors:**
+  - ⚠️ Weak institutional safeguards
+  - ⚠️ Lack of elite consensus
+  - ⚠️ Civil society suppression
+- **Comparative Context:**
+  - ▸ Outperformed Egypt/Libya post-2011
+  - ▸ Now parallels democratic erosion in Hungary/Poland
+
+### ❓ Why This Matters
+A textbook case of:
+1. Revolutionary optimism (2011-2014)
+2. Consolidation failures (2015-2019)
+3. Authoritarian resilience (2020-present)
+
+> **Visual Evidence:** See [Tunisia's Democracy Score Over Time](Democracy%20score%20over%20time%20Tunisia.png) for the full trajectory.
+
+---
+
+
+## 🔍 Explore the Full Analysis
+[![RMarkdown](https://img.shields.io/badge/Open_Full_Report-RMarkdown-blue?logo=R)](Tunisia%E2%80%99s%20Fragile%20Democratic%20Rollercoaster%20Insights%20from%20V-Dem%20ERT%20Data.Rmd)
+
+---
+  
   ## 👩‍💻 Author
   
 Amira Ben Salem  : 📧 besamira77@gmail.com
