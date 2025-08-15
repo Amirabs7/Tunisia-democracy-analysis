@@ -5,6 +5,16 @@
 ## 📌 Overview  
 Tunisia has had a unique political trajectory in the MENA region since the Arab Spring in 2011. This repository presents an in-depth, data-driven analysis of Tunisia’s democratic journey, leveraging the **Varieties of Democracy (V-Dem) Episodes of Regime Transformation (ERT) dataset** to uncover trends, turning points, and long-term risks in its fragile transition.
 
+
+---
+
+## What this project shows
+- Political science research and R data analysis using tidyverse and ggplot2.
+- Insights into Tunisia’s democratic trajectory, fragility, and global comparisons.
+- Reproducible RMarkdown report with  visualizations and narrative.
+
+---
+
 📍 **Data Source**:  
 [V-Dem ERT Dataset v2](https://www.v-dem.net/) – Episodes of Regime Transformation  
 
