@@ -46,6 +46,22 @@ R scripts used for:
 
 --
 
+## 🛠️ How to Reproduce
+
+- Clone this repository:
+
+git clone https://github.com/Amirabs7/Tunisia-Democracy-Analysis.git
+
+- Install the R packages listed above.
+- Open the RMarkdown file in RStudio / RStudio Cloud:
+reports/Tunisia’s Fragile Democratic Rollercoaster Insights from V-Dem ERT Data.Rmd
+
+- Click Knit → choose HTML, PDF, or Word.
+
+- The knitted report will generate all plots, tables, and narrative automatically.
+
+---
+
 ## 📊 Key Visualizations  
 *(Click any image to view full resolution)*  
 
