@@ -25,21 +25,32 @@ The goal is to provide an evidence-based perspective on the fragility, resilienc
 
 ## 🗂️ Repository Structure
 
-📊 plots/
-- Visualizations created in R (PDF, PNG), showing democracy scores, regime timelines, etc.
+├──.Rhistory
 
-📜 scripts/
-R scripts used for:
-- Cleaning and filtering ERT data
-- Calculating democracy indices
-- Creating visualizations
+├──Democracy Score Over Time (Tunisia).R
 
-📝 reports/
-- RMarkdown file containing the full narrative and interpretation:
-- ➤ Tunisia’s Fragile Democratic Rollercoaster Insights from V-Dem ERT Data.Rmd
+├──Democracy score over time Tunisia.png
 
-📁 data/
-- data.csv (processed subset from V-Dem ERT dataset)
+├──Democratization process.R
+
+├──Outcomes of democratization episodes gloabl.png
+
+├──README.md
+
+├──Readme.txt
+
+├──Starting Democracy Levels of Successful Transitions Since 2000.png
+
+├──The Episodes of Regime Transformation (ERT) dataset.R
+
+├──Tunisia’s Fragile Democratic Rollercoaster Insights from V-Dem ERT Data.Rmd
+
+├──data.csv
+
+├──post democratization episode status by country.png
+
+├──success of democratization episodes over time.png
+
 
 
 
@@ -72,11 +83,32 @@ reports/Tunisia’s Fragile Democratic Rollercoaster Insights from V-Dem ERT Dat
 
 ---
 
+## 🔁 Reproducibility & Data Provenance
+
+**Source:** V-Dem ERT dataset (subset for Tunisia)  
+
+**Cleaning/Filtering:** 
+- Subset Tunisia data (`country_name == "Tunisia"`)  
+- Removed non-episodes (`dem_ep_outcome_agg > 0`) for global plots  
+- Created binary outcome for logistic regression (`success_binary = 1 if dem_ep_outcome_agg == 4`)
+
+**Reproducibility:**  
+- R version >= 4.3  
+- Packages: ERT, dplyr, ggplot2, tibble  
+
+**Random Seed:** 42 (used for reproducible plots and simulations)  
+
+**Session Info:** Run `sessionInfo()` to reproduce exact environment
+
+
+---
 
 ## 📊 Key Visualizations and Key Insights :
 *(Click any image to view full resolution)*  
 
 ### 1. Tunisia’s Democracy Score Over Time  
+
+
 [![Polyarchy Index](Democracy%20score%20over%20time%20Tunisia.png)](Democracy%20score%20over%20time%20Tunisia.png)  
 *Post-2011 surge, 2014 peak, and gradual decline after 2019.*  
 
@@ -96,27 +128,49 @@ Root Causes of Democratic Erosion :
   
 
 
-### 2. Global Democratization Outcomes  
+### 2. Global Democratization Outcomes  : 
+
+
 [![Success Rates](Outcomes%20of%20democratization%20episodes%20gloabl.png)](Outcomes%20of%20democratization%20episodes%20gloabl.png)  
-*Only 17% of episodes achieve full democratic success (V-Dem ERT).*  
 
 
-Global Comparisons :
+- Since 2000, most democratization episodes failed or stagnated.Only ~17% succeeded in reaching stable democracy (V-Dem ERT, 2024).
+- Partial democratization (some liberalization but not full democracy) is common.
+- Democratization is the exception, not the rule. The vast majority of transitions collapse back into authoritarianism or stall in hybrid regimes. Tunisia’s failed attempt fits this broader global pattern, showing that even with international support and initial enthusiasm, structural weaknesses (economic crises, elite resistance, weak institutions) usually prevent consolidation.
 
-- Other democratization episodes since 2000: Benin, Bolivia, Fiji, Honduras, Thailand, Zambia
-- Partial democracies sometimes struggle more to consolidate due to hybrid instability
-- Successful transitions often start from very low or intermediate institutional levels, not already “semi-free” states
+
+
+
+### 3. Starting Democracy Levels of Successful Transitions Since the 2000s : 
+
+
+[![Starting Levels](Starting%20Democracy%20Levels%20of%20Successful%20Transitions%20Since%202000.png)](Starting%20Democracy%20Levels%20of%20Successful%20Transitions%20Since%202000.png)
+
+- Successful democratizations since 2000 usually started in regimes that were not fully authoritarian, but had medium democracy levels (Polyarchy ~0.4–0.5).
+- Almost no cases of success came from “hard” authoritarian regimes (Polyarchy <0.2).
+- Full authoritarian collapses almost never democratize successfully. Success depends on pre-existing pluralism, semi-open institutions, or organized opposition. Tunisia was an unusual case: it started from a fairly authoritarian baseline (Polyarchy ~0.25), which helps explain why consolidation failed — the institutional and economic foundations weren’t strong enough to sustain democracy.
+
+
+### 4. Success of Democratization Episodes Over Time : 
+
+
+[![Success of Democratization](success%20of%20democratization%20episodes%20over%20time.png)](success%20of%20democratization%20episodes%20over%20time.png)
+
+
+- From 1900–mid 20th century, almost all democratization attempts failed.Late 20th century (1970s–1990s) saw more successes (e.g., Latin America, Eastern Europe, Southern Europe). Since 2000, successes are rare again, with failure/stagnation dominating.
+- The global “third wave” of democracy (1970s–1990s) was historically unique. The post–2000 era has been much harsher: authoritarian resilience, resource wealth, geopolitical rivalries, and weak international pressure mean that most attempts crash. Tunisia wasn’t a unique tragedy — it was part of a systemic reversal in global democratization
+
+
+### 5.Post- democratization episode status by country :
+
+
+[![Post-Democratization Status](post%20democratization%20episode%20status%20by%20country.png)](post%20democratization%20episode%20status%20by%20country.png)
+
+
+- Other democratization episodes since 2000: Benin, Bolivia, Fiji, Honduras, Thailand, Zambia.
+- Partial democracies sometimes struggle more to consolidate due to hybrid instability.
+- Successful transitions often start from very low or intermediate institutional levels, not already “semi-free” states.
   
-
-### 3. Starting Democracy Levels vs. Success  
-[![Initial Conditions Matter](Starting%20Democracy%20Levels%20of%20Successful%20Transitions%20Since%202000.png)](Starting%20Democracy%20Levels%20of%20Successful%20Transitions%20Since%202000.png)  
-*Transitions from partial autocracy (Polyarchy ~0.3) succeed most often.*  
-
-Predictive Insights :
-
-- Logistic regression shows higher starting Polyarchy scores do not always guarantee success
-- Countries with very low institutional quality sometimes achieve more dramatic breakthroughs
-- Tunisia exemplifies the complex, non-linear nature of democratization
 
 ---
 
@@ -158,4 +212,19 @@ Not Endorsement: This project is not affiliated with, endorsed by, or sponsored 
 
 ---
 
-  
+### 📌  Citation
+
+If you use this repository in your research, please cite it as follows:
+
+cff-version: 1.2.0
+
+message: "If you use this work, please cite it as below.
+
+- title: "Democracy Transitions Analysis"
+- authors:
+- family-names: Ben Salem
+- given-names: Amira
+- orcid: "0000-0002-XXXX-XXXX"
+- date-released: 2025-08-23
+- version: "1.0.0"
+- url: "https://github.com/Amirabs7/Democracy-Transitions-Analysis"  
