@@ -166,7 +166,7 @@ Root Causes of Democratic Erosion :
 [![Post-Democratization Status](post%20democratization%20episode%20status%20by%20country.png)](post%20democratization%20episode%20status%20by%20country.png)
 
 
-- Other democratization episodes since 2000: Benin, Bolivia, Fiji, Honduras, Thailand, Zambia.
+- This graph focuses on other democratization episodes since 2000, mainly the following countries: Benin, Bolivia, Fiji, Honduras, Thailand, Zambia.
 - Partial democracies sometimes struggle more to consolidate due to hybrid instability.
 - Successful transitions often start from very low or intermediate institutional levels, not already “semi-free” states.
   
@@ -210,20 +210,3 @@ Limitations: The findings and clusters are exploratory in nature and are based o
 Not Endorsement: This project is not affiliated with, endorsed by, or sponsored by any mentioned companies or entities.
 
 ---
-
-### 📌  Citation
-
-If you use this repository in your research, please cite it as follows:
-
-cff-version: 1.2.0
-
-message: "If you use this work, please cite it as below.
-
-- title: "Democracy Transitions Analysis"
-- authors:
-- family-names: Ben Salem
-- given-names: Amira
-- orcid: "0000-0002-XXXX-XXXX"
-- date-released: 2025-08-23
-- version: "1.0.0"
-- url: "https://github.com/Amirabs7/Democracy-Transitions-Analysis"  
