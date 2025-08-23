@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+
+message: "If you use this work, please cite it as below."
+
+title: "Democracy Transitions Analysis"
+
+authors:
+  family-names: Ben Salem
+  given-names: Amira
+  orcid: "0000-0002-XXXX-XXXX"
+
+date-released: 2025-08-23
+version: "1.0.0"
+url: "https://github.com/Amirabs7/Democracy-Transitions-Analysis"
