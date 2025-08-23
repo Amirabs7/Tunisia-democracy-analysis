@@ -157,7 +157,7 @@ Root Causes of Democratic Erosion :
 
 
 - From 1900–mid 20th century, almost all democratization attempts failed.Late 20th century (1970s–1990s) saw more successes (e.g., Latin America, Eastern Europe, Southern Europe). Since 2000, successes are rare again, with failure/stagnation dominating.
-- The global “third wave” of democracy (1970s–1990s) was historically unique. The post–2000 era has been much harsher: authoritarian resilience, resource wealth, geopolitical rivalries, and weak international pressure mean that most attempts crash. Tunisia wasn’t a unique tragedy — it was part of a systemic reversal in global democratization
+- The global “third wave” of democracy (1970s–1990s) was historically unique. The post–2000 era has not been easy either : authoritarian resilience, resource wealth, geopolitical rivalries, and weak international pressure mean that most attempts crash. Tunisia wasn’t a unique tragedy — it was part of a systemic reversal in global democratization
 
 
 ### 5.Post- democratization episode status by country :
@@ -175,11 +175,11 @@ Root Causes of Democratic Erosion :
 
 
 
-**❓ Why This Case Study Matters: A Beacon for the Arab World** :
+**❓ Why This Case Study Matters** :
 
 Tunisia is a case study with both national and global significance:
 
-- Provides lessons for the Arab world and transitional regimes globally.
+- Provides lessons for the Arab region and transitional regimes globally.
 - Demonstrates how revolutions can succeed initially but face long-term consolidation challenges.
 - Highlights the fragility of democratic institutions and the importance of robust governance.
 
