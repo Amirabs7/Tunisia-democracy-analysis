@@ -60,7 +60,7 @@ The goal is to provide an evidence-based perspective on the fragility, resilienc
 ## 📦 Dependencies
 
 - Make sure you have R (≥ 4.0) and the following packages installed:
-- install.packages(c("ggplot2", "dplyr", "readr", "tibble", "scales", "lubridate", "stringr"))
+- install.packages(c("ggplot2", "dplyr", "readr", "tibble", "scales"))
 
 
 ---
@@ -70,11 +70,10 @@ The goal is to provide an evidence-based perspective on the fragility, resilienc
 
 - Clone this repository:
 
-git clone https://github.com/Amirabs7/Tunisia-Democracy-Analysis.git
+git clone https://github.com/Amirabs7/Democracy-Transitions-Analysis.git
 
 - Install the R packages listed above.
-- Open the RMarkdown file in RStudio / RStudio Cloud:
-reports/Tunisia’s Fragile Democratic Rollercoaster Insights from V-Dem ERT Data.Rmd
+- Open the RMarkdown file in RStudio /Tunisia’s Fragile Democratic Rollercoaster Insights from V-Dem ERT Data.Rmd
 
 - Click Knit → choose HTML, PDF, or Word.
 
